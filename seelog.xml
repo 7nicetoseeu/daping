@@ -1,0 +1,21 @@
+<seelog minlevel="debug" maxlevel="critical">
+    <exceptions>
+        <exception filepattern="*main.go" minlevel="error"/>
+    </exceptions>
+    <outputs formatid="daping">
+        <console/>
+
+        <buffered formatid="rolling" size="1000" flushperiod="1000">
+         <rollingfile type="date" filename="./log/info.log" datepattern="2006.01.02"  maxrolls="30" />
+        </buffered>
+
+        <filter levels="error">
+            <file path="./log/error.log"/>
+        </filter>
+
+    </outputs>
+    <formats>
+        <format id="daping" format="%Date/%Time [%LEV] &lt;%File %Line&gt; %Msg%n"/>
+        <format id="rolling" format="%Date/%Time [%LEV] &lt;%File %Line&gt; %Msg%n"/>
+    </formats>
+</seelog>

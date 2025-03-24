@@ -1,0 +1,49 @@
+{
+    "parmas": {
+      "names":"'UPS','空调','电量仪','发电机','列头柜','电池','漏水','温湿度','直流屏','变压器','加湿器','冷水机组','高压柜','总管','EPS'",
+      "httpport":8090,
+      "addrname":"廊坊"
+    },
+    "dbType": "TIDB",
+    "mysql": {
+      "driver": "mysql",
+      "host": "10.3.0.247",
+      "port": 3306,
+      "account": "dhtest-nd",
+      "pwd": "Rangeidc_123",
+      "dbname": "rangeidc?charset=utf8"
+    },
+    "mongo": {
+      "host": [
+        "10.3.0.22"
+      ],
+      "port": 27017,
+      "account": "rangeidc",
+      "pwd": "LAHMyyc@1233",
+      "database": "rangeidc",
+      "auth": true
+    },
+    "influx1":{
+      "host":"10.3.0.109",
+      "port":8086,
+      "token":"hmc72eicR3wRt1VJI4gYvMA3LmrocLR6A9Qu3XGFOexXYy7j5ujthEhslU4ehVg5sDTe6jCUdF5IdHe2OWOH5w=="
+    },
+
+    
+    "influx": {
+      "host": {
+        "P001_A003": "10.3.0.107",
+        "P001_A007": "10.3.0.108",
+        "P001_A018": "10.3.0.109"
+      },
+      "port": 8086,
+      "token": {
+        "P001_A003": "eg8PG8-qWKPiGd1dewvrgJ6wxfcRZILVlKavZ2374NlS7zBcov_mo60PKUlKsd6nfyeHEv9ZAnMIOT15MTprTg==",
+        "P001_A007": "61kalCVEf967S7PnZjRIoUu7rJ2LUkTCd76A1xmNoz8kodW59QuB9qD1026xWR2P3cVqsXCiDgoBHqm1k7cbng==",
+        "P001_A018": "hmc72eicR3wRt1VJI4gYvMA3LmrocLR6A9Qu3XGFOexXYy7j5ujthEhslU4ehVg5sDTe6jCUdF5IdHe2OWOH5w=="
+      },
+      "bucket": "sspaas_test"
+
+    }
+}
+

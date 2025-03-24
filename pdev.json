@@ -1,0 +1,37 @@
+{
+    
+    "dbType": "TIDB",
+    "mysql": {
+      "driver": "mysql",
+      "host": "10.5.1.253",
+      "port": 3306,
+      "account": "root",
+      "pwd": "Admin@1233",
+      "dbname": "rangeidc?charset=utf8"
+    },
+    "mongo": {
+      "host": [
+        "10.5.1.102"
+      ],
+      "port": 27017,
+      "account": "root",
+      "pwd": "Admin@1233",
+      "database": "admin",
+      "auth": true
+    },
+    "influx": {
+      "host": {
+        "P002_A001": "10.5.1.101:8086"
+      },
+      "token": {
+        "P002_A001": "-FgebCeABVlDERGsQQNwRsnZv2qqVYMQ74LmIC0ueUAUlHNL785mvo41ZqpluSlTtnaIEqN9p5tfrTz5q-Igug=="
+      },
+      "bucket": "sspaas_test"
+    },
+    "parmas": {
+      "names":"'UPS','空调','电量仪','发电机','列头柜','电池','漏水','温湿度','直流屏','变压器','加湿器','冷水机组','高压柜','总管','EPS'",
+      "httpport":8091,
+      "addrname":"平湖"
+    }
+}
+
